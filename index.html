@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUIKI_{)EV - Developer Progammer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+      color: #BF3131;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.8s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .header h1 a {
+      font-size: 2.5rem;
+      color: #BF3131;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .header h1 a:hover {
+      color: #8c1f1f;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+      order: 2;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 5%;
+      font-weight: 700;
+      background: linear-gradient(
+        135deg, 
+        #BF3131 0%,    
+        #E96479 25%,   
+        #BB4141 50%,   
+        #E96479 75%,   
+        #BF3131 100%   
+      );
+      background-size: 400% auto; 
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 8s linear infinite; 
+    }
+
+    @keyframes glow {
+      0% {
+        background-position: 0% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .header h1 a {
+        font-size: 2rem;
+      }
+
+      .header img {
+        max-height: 200px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 a {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>
+      <a href="mailto:guilherme.santos@guikidev.com" title="Clique para enviar e-mail">GUIKI_{)EV</a>
+    </h1>
+    <img src="src/copiar 1.png" alt="Logo GuikiDev" />
+  </div>
+
+  <p>Desenvolvimento web moderno, <strong>gratuito</strong> e com estilo. Aqui o código é arte, e você é parte dessa criação.</p>
+
+</body>
+</html>
